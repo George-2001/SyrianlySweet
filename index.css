@@ -1,0 +1,185 @@
+#banner{
+  background-image: url(lib/images/R.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 120px;
+}
+h1 {
+    color: pink;
+}
+h2{
+  text-align: center;
+}
+
+#topnavbackground{
+  background-color: pink;
+}
+
+.topnav {
+    width: 50%;
+    margin:auto;
+    background-color: pink;
+    overflow: hidden;
+    list-style-type: none;
+  }
+
+  .topnav a {
+    width:15%;
+    transition-duration: 1.5s;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: linear-gradient(white, pink);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+#navbar a{
+    list-style: none;
+    margin: 20;
+    padding: 20;
+}
+  #navbar a{
+    display: inline-block;
+    padding: 20px;
+  }
+  .container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100px;
+    gap: 10px;
+    align-self: center;
+  }
+
+  #marzipans{
+    background-image: url(lib/images/marzipans.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+  }
+  #cookies{
+    background-image: url(lib/images/marzipans.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+  }
+  #pasteries{
+    background-image: url(lib/images/marzipans.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+  }
+  #assortments{
+    background-image: url(lib/images/marzipans.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  /* contact.html section*/
+
+  #mediaLinks{
+    display: inline-block;
+    margin: 10%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 20px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+  /* about.html section*/
+#backstory{
+  width: 80%;
+  margin: 10%;
+}
+
+  #starting{
+    color: #04AA6D;
+    text-align: center;
+  }
+
+  #beginning{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+
+/* desserts.html section*/
+
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
