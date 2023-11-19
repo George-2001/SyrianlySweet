@@ -1,3 +1,6 @@
+
+/* Top banner and logo */
+
 #banner{
   background-image: url(lib/images/R.jpg);
   background-position: center;
@@ -12,26 +15,28 @@ h2{
   text-align: center;
 }
 
-#topnavbackground{
-  background-color: pink;
-}
 
+/* Navigation Bar */
 .topnav {
-    width: 50%;
-    margin:auto;
+    margin: auto;
     background-color: pink;
     overflow: hidden;
     list-style-type: none;
+    text-align: center;
   }
 
   .topnav a {
     width:15%;
     transition-duration: 1.5s;
-    float: left;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px;
     text-decoration: none;
     font-size: 17px;
+    list-style: none;
+    margin: 20;
+    padding: 20;
+    display: inline-block;
+    padding: 20px;
   }
   
   /* Change the color of links on hover */
@@ -46,15 +51,13 @@ h2{
     color: white;
   }
 
-#navbar a{
-    list-style: none;
-    margin: 20;
-    padding: 20;
+#navbar cart{
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  
+
 }
-  #navbar a{
-    display: inline-block;
-    padding: 20px;
-  }
   .container{
     display:grid;
     grid-template-columns: 1fr;

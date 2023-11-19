@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-  <script defer type="type/javascript" src="dessertAccordion.js"></script>
+  <script src="main.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -24,11 +24,12 @@
   <a href="desserts.html">Desserts</a>
   <a href="contact.html">Contact</a>
   <a href="about.html">About</a>
+  <a>Cart</a>
 </div>
 
 <body>
 
-  <button class="accordion" >Section 1</button>
+  <button class="accordion" onclick="alert('activated');">Section 1</button>
   <div class="panel">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -57,25 +58,7 @@
   </div>
 
 
-  <script>
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-
-  </script>
 </body>
 
 
