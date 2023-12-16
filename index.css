@@ -66,30 +66,29 @@ h2{
     align-self: center;
   }
 
-  /* #marzipans{
+  #marzipans{
     background-image: url(lib/images/marzipans.png);
-    height: 100px;
-    width: 100px;
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-position: right;
+
+    background-repeat: no-repeat;
   }
   #cookies{
     background-image: url(lib/images/marzipans.png);
-    height: 100px;
-    width: 100px;
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   #pasteries{
     background-image: url(lib/images/marzipans.png);
-    height: 100px;
-    width: 100px;
-    background-position: center;
-    background-size: cover;
-  }*/
+    background-size: contain;
+    
+    background-repeat: no-repeat;
+  }
   #assortments{
     background-image: url(lib/images/marzipans.png);
     background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
   } 
 
 
@@ -156,7 +155,7 @@ h2{
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s;
+  height: 150px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
