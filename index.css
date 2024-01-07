@@ -158,8 +158,24 @@ h2{
   height: 150px;
 }
 
+.accordionLeft {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: right;
+  border: none;
+  outline: none;
+  height: 150px;
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.active, .accordionLeft:hover {
   background-color: #ccc;
 }
 
@@ -178,6 +194,20 @@ h2{
   transition: max-height 1s ease-in;
 }
 
+.panelLeft {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.panelLeft.open {
+  display: inline-block;
+  max-height: 1000px; /* Adjust this value according to your content's height */
+  transition: max-height 1s ease-in;
+}
+
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
@@ -187,5 +217,17 @@ h2{
 }
 
 .active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordionLeft:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: left;
+  margin-right: 5px;
+}
+
+.activeLeft:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
